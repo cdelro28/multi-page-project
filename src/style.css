@@ -9,7 +9,6 @@ body {
 }
 
 h1,
-h2,
 h3 {
   text-align: center;
   margin: 0;
@@ -34,31 +33,24 @@ p {
   line-height: 1.5;
 }
 
-.button-dark {
+.button {
+  margin: 20px;
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.dark {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
-  margin: 20px;
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
 }
 
-.button-light {
+.light {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
-  margin: 20px;
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
-}
-
-.homepage-link {
-  color: var(--primary-color);
-  text-align: center;
-  display: block;
 }
 
 .about-paragraphs {
@@ -80,4 +72,28 @@ p {
 
 .email-link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 46px;
+  }
+  h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+  h3 {
+    font-size: 20px;
+    padding: 20px;
+  }
+  p {
+    font-size: 18px;
+    text-align: center;
+  }
+  .button {
+    text-align: center;
+    display: block;
+    margin: 10px;
+    padding: 10px;
+  }
 }
