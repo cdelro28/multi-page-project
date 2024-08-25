@@ -62,12 +62,16 @@ p {
   margin: 10px;
 }
 
-.email-link {
+.contact-me {
   display: flex;
   justify-content: center;
-  color: var(--primary-color);
   font-size: 28px;
+}
+
+.email-link {
+  color: var(--primary-color);
   text-decoration: none;
+  padding-left: 10px;
 }
 
 .email-link:hover {
@@ -95,5 +99,11 @@ p {
     display: block;
     margin: 10px;
     padding: 10px;
+  }
+  .contact-me {
+    font-size: 16px;
+  }
+  .email-link {
+    font-size: 16px;
   }
 }
